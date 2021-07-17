@@ -9,7 +9,7 @@ Just learned about encryption—now, my website is unhackable!
 secure.mc.ax
 
 # solution
-This problem is a simple sql injection.  When looking at the javascript, you can find that the input is 'sanitized' client side via base 64 encoding, thereby preventing any direct sql injection through the input boxes.  However, this can be very easily bypassed by using burp suite.  Burp allows you to directly modify the packet sent, so you can change the base64 encoded password in the request sent to the sql injection to bypass it and get the flag.
+This problem is a simple sql injection.  When looking at the javascript, you can find that the input is 'sanitized' client side via base 64 encoding, thereby preventing any direct sql injection through the input boxes.  However, this can be very easily bypassed by using burp suite.  Burp allows you to directly modify the packet sent, so you can change the base64 encoded password in the request sent to the sql injection to bypass b64 encoding and get the flag.
 
 <br>
 
